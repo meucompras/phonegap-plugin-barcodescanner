@@ -18,6 +18,11 @@
         <param name="ios-package" value="CDVBarcodeScanner"/>
       </feature>
     </config-file>
+        <!-- camera -->
+        <config-file parent="NSCameraUsageDescription" target="*-Info.plist">
+            <string>A câmera é utilizada para escanear código de barras para realizar pesquisa de produtos.</string>
+        </config-file>
+        <!-- /camera -->
     <resource-file src="src/ios/scannerOverlay.xib"/>
     <resource-file src="src/ios/CDVBarcodeScanner.bundle"/>
     <source-file src="src/ios/CDVBarcodeScanner.mm"/>
